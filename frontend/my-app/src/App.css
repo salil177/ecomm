@@ -1,0 +1,156 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-app{
+  max-width: 1200px;
+    margin: 0px auto;
+}
+
+.all-products{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.oneproduct-card {
+  width: 100%;
+  background: #a79f9f7d;
+}
+
+.oneproduct-card img{
+  width: 100%;
+}
+
+
+.cart-btn{
+    background: none;
+    border: 0px;
+}
+
+.nav-main{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-cart-acc{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cart-icon{
+  width:32px;
+}
+
+.cart-count{
+  position: relative;
+  right: 20px;
+  top: -20px;
+  font-size: 16px;
+  background: black;
+  padding: 4px 6px;
+  border-radius: 100%;
+  color: white;
+}
+
+.cart-page{
+  position: absolute;
+    right: 0;
+    /* left: 0; */
+    width: 20vw;
+    height: 100vh;
+    background: white;
+    box-shadow: -3px 10px 5px -3px rgba(0,0,0,0.75);
+    padding: 20px;
+    z-index: 2;
+    overflow-y: scroll;
+    
+}
+
+.cart-page img {
+  width: 100%;
+}
+
+
+.flex-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-nav{
+  display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding-left: inherit;
+}
+
+.account-btn{
+  padding:20px 0px;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.log-reg-btn{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: block;
+    position: absolute;
+    top: 60px 
+}
+
+.log-reg-btn a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+
+.cart-item{
+  margin-top:20px;
+}
+
+.cart-item:first-child{
+  margin-top:0px !important;
+}
